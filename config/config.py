@@ -17,7 +17,7 @@ def init():
     streamHandler.setFormatter(log_format)
     logger.addHandler(streamHandler)
 
-    timedRotatingFileHandler=TimedRotatingFileHandler(filename="log/all.log",when='H',interval=1,encoding='utf-8')
+    timedRotatingFileHandler=TimedRotatingFileHandler(filename=logFile,when='H',interval=1,encoding='utf-8')
     timedRotatingFileHandler.setFormatter(log_format)
 
 
